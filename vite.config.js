@@ -7,6 +7,7 @@ import path from "node:path"
  * @type import('vite').UserConfig
  */
 export default defineConfig({
+  base: '/react19-demo/',
   plugins: [react()],
   resolve: {
     alias: {
