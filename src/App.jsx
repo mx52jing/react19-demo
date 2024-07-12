@@ -5,6 +5,7 @@ import MenuPanel from "@/pages/MenuPanel";
 import UpdateData from "@/pages/UpdateData";
 import DataInitAndUpdate from "@/pages/DataInitAndUpdate";
 import DataInitAndUpdateToList from "@/pages/DataInitAndUpdateToList";
+import LoadMoreData from "@/pages/LoadMoreData";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
               <Route path="/update_data" element={<UpdateData />} />
               <Route path="/data_init_update" element={<DataInitAndUpdate />} />
               <Route path="/data_init_update_to_list" element={<DataInitAndUpdateToList />} />
+              <Route path="/load_more_data" element={<LoadMoreData />} />
               <Route path="*" element={<UsePage />} />
           </Routes>
       </>

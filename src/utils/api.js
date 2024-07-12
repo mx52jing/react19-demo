@@ -12,3 +12,10 @@ export const getMessage = () => new Promise((resolve) => {
         resolve({ value: randomStr[index]} )
     }, 2000)
 })
+
+
+export const fetchUserList = async (count) => {
+    const url = `https://randomuser.me/api/?results=${count}&inc=name,gender,email,nat,picture&noinfo`;
+    const res = await fetch(url)
+    return res.json()
+}
