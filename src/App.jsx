@@ -6,6 +6,8 @@ import UpdateData from "@/pages/UpdateData";
 import DataInitAndUpdate from "@/pages/DataInitAndUpdate";
 import DataInitAndUpdateToList from "@/pages/DataInitAndUpdateToList";
 import LoadMoreData from "@/pages/LoadMoreData";
+import SearchCases from "@/pages/SearchCases";
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
               <Route path="/data_init_update" element={<DataInitAndUpdate />} />
               <Route path="/data_init_update_to_list" element={<DataInitAndUpdateToList />} />
               <Route path="/load_more_data" element={<LoadMoreData />} />
+              <Route path="/search_case" element={<SearchCases />} />
               <Route path="*" element={<UsePage />} />
           </Routes>
       </>

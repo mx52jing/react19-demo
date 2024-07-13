@@ -8,6 +8,7 @@ const MenuPanel = () => {
             <Link to="/data_init_update">4.data init and update</Link>
             <Link to="/data_init_update_to_list">5.data init and update to list</Link>
             <Link to="/load_more_data">6.load more data</Link>
+            <Link to="/search_case">7.search cases</Link>
         </div>
     )
 }

@@ -14,8 +14,28 @@ export const getMessage = () => new Promise((resolve) => {
 })
 
 
-export const fetchUserList = async (count) => {
+export const fetchUserList = async (count = 1) => {
     const url = `https://randomuser.me/api/?results=${count}&inc=name,gender,email,nat,picture&noinfo`;
     const res = await fetch(url)
     return res.json()
+}
+
+export const fetchUserWithCancel = (count = 1) => {
+    // 添加可以取消请求
+    const abortController = new AbortController()
+    const promise = new Promise((resolve, reject) => {
+        const url = `https://randomuser.me/api/?results=${count}&inc=name,gender,email,nat,picture&noinfo`;
+        fetch(url, { signal: abortController.signal })
+            .then(res => {
+                resolve(res.json())
+            })
+            .catch(e => {
+                reject(e)
+            })
+    })
+    promise.abort = () => {
+        if(!abortController) return
+        abortController.abort()
+    }
+    return promise
 }
