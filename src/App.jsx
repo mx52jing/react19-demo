@@ -7,6 +7,7 @@ import DataInitAndUpdate from "@/pages/DataInitAndUpdate";
 import DataInitAndUpdateToList from "@/pages/DataInitAndUpdateToList";
 import LoadMoreData from "@/pages/LoadMoreData";
 import SearchCases from "@/pages/SearchCases";
+import NestedSuspense from "@/pages/NestedSuspense";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
               <Route path="/data_init_update_to_list" element={<DataInitAndUpdateToList />} />
               <Route path="/load_more_data" element={<LoadMoreData />} />
               <Route path="/search_case" element={<SearchCases />} />
+              <Route path="/nested_suspense" element={<NestedSuspense />} />
               <Route path="*" element={<UsePage />} />
           </Routes>
       </>
