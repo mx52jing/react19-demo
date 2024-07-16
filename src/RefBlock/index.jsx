@@ -1,5 +1,6 @@
 import {useImperativeHandle, useRef, useState} from 'react'
 
+// eslint-disable-next-line react/prop-types
 const ListBlock = ({ ref }) => {
     const listBlockRef = useRef(null)
     const [list] = useState(() => {

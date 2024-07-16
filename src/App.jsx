@@ -9,6 +9,9 @@ import LoadMoreData from "@/pages/LoadMoreData";
 import SearchCases from "@/pages/SearchCases";
 import NestedSuspense from "@/pages/NestedSuspense";
 import RefBlock from "@/RefBlock";
+import RefControlModal from "@/pages/RefControlModal";
+import ContextBase from "@/pages/ContextBase/index.jsx";
+import NumberOfSkinChanges from "@/pages/NumberOfSkinChanges";
 
 
 function App() {
@@ -25,6 +28,9 @@ function App() {
               <Route path="/search_case" element={<SearchCases />} />
               <Route path="/nested_suspense" element={<NestedSuspense />} />
               <Route path="/ref_usage" element={<RefBlock />} />
+              <Route path="/ref_control_modal" element={<RefControlModal />} />
+              <Route path="/context_base" element={<ContextBase />} />
+              <Route path="/skin_change_count" element={<NumberOfSkinChanges />} />
               <Route path="*" element={<UsePage />} />
           </Routes>
       </>

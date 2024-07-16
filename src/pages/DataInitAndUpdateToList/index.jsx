@@ -39,6 +39,7 @@ const OldImplementation = () => {
     return (
         <div>
             <h1>老版本(18.x)实现</h1>
+            <h2>setState中没有传函数参数的话，会出现下面的问题</h2>
             <button onClick={handleAddData}>获取更多数据</button>
             <ListBlock list={dataList} />
         </div>

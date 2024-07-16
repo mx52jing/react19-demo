@@ -4,6 +4,7 @@ specifiers:
   '@types/react': ^18.3.3
   '@types/react-dom': ^18.3.0
   '@vitejs/plugin-react': ^4.3.1
+  clsx: ^2.1.1
   eslint: ^8.57.0
   eslint-plugin-react: ^7.34.2
   eslint-plugin-react-hooks: ^4.6.2
@@ -14,6 +15,7 @@ specifiers:
   vite: ^5.3.1
 
 dependencies:
+  clsx: 2.1.1
   react: 19.0.0-rc-df783f9ea1-20240708
   react-dom: 19.0.0-rc-df783f9ea1-20240708_vm5jmbtbhn22rkp32z6amajmyy
   react-router-dom: 6.24.1_kxctg7ng3w6bx3se26cijjdecy
@@ -979,6 +981,11 @@ packages:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
     dev: true
+
+  /clsx/2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
+    dev: false
 
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}

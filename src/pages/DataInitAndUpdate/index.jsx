@@ -1,4 +1,4 @@
-import {Suspense, use, useState} from "react";
+import {Suspense, use, useEffect, useState} from "react";
 import LoadingPanel from "@/components/Loading.jsx";
 import {getMessage} from "@/utils/api.js";
 
@@ -20,6 +20,9 @@ const DataInitAndUpdate = () => {
     const handleReFetchData = () => {
         updateMsgPromise(getMessage())
     }
+    useEffect(() => {
+        console.log("msgPromise changed", msgPromise)
+    }, [msgPromise]);
     return (
         <div>
             <h1>Data Init And Update</h1>
