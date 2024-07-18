@@ -1,8 +1,6 @@
 import {useRef} from 'react'
 import Modal from "@/components/Modal";
 
-import "./index.css"
-
 
 const RefControlModal = () => {
     const modalRef = useRef()

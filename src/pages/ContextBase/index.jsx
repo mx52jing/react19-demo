@@ -1,6 +1,6 @@
 import {use, useRef} from "react";
 import {AppContext, AppProvider} from "./context";
-import Modal from "@/components/Modal.jsx";
+import Modal from "@/components/Modal";
 
 const ModalBlock = () => {
     const modelRef = useRef(null)

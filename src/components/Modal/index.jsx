@@ -2,6 +2,8 @@ import {useImperativeHandle, useState} from 'react'
 import clsx from "clsx";
 import {createPortal} from "react-dom";
 
+import "./index.css"
+
 const Modal = (props) => {
     // eslint-disable-next-line react/prop-types
     const { children, ref } = props
