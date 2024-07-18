@@ -12,6 +12,7 @@ import RefBlock from "@/RefBlock";
 import RefControlModal from "@/pages/RefControlModal";
 import ContextBase from "@/pages/ContextBase/index.jsx";
 import NumberOfSkinChanges from "@/pages/NumberOfSkinChanges";
+import HookUseDeferredValue from "@/pages/HookUseDeferredValue";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               <Route path="/ref_control_modal" element={<RefControlModal />} />
               <Route path="/context_base" element={<ContextBase />} />
               <Route path="/skin_change_count" element={<NumberOfSkinChanges />} />
+              <Route path="/use_deferred_value" element={<HookUseDeferredValue />} />
               <Route path="*" element={<UsePage />} />
           </Routes>
       </>

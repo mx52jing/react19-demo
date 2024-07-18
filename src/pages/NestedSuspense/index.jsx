@@ -1,11 +1,11 @@
 import {Suspense, use, useState} from "react";
-import LoadingPanel from "@/components/Loading";
 import {fetchUserWithCancel} from "@/utils/api.js";
 import UserPanel from "@/components/UserPanel";
 
 // eslint-disable-next-line react/prop-types
 const AccountUse = ({ accountPromise }) => {
     const {results} = use(accountPromise)
+    console.log("===========AccountUse============")
     const [userPromise] = useState(() => fetchUserWithCancel(6))
     return (
         <div>
@@ -22,7 +22,7 @@ const AccountUse = ({ accountPromise }) => {
                     })
                 }
             </div>
-            <Suspense fallback={<div>UserPanel loading......</div>}>
+            <Suspense fallback={<div style={{ fontWeight: "bold" }}>UserPanel loading......</div>}>
                 <UserPanel userPromise={userPromise} />
             </Suspense>
         </div>
@@ -34,8 +34,8 @@ const NestedSuspense = () => {
     return (
         <div>
             <h1>Nested Suspense</h1>
-            <h2>先加载AccountUse，然后再加载UserPanel</h2>
-            <Suspense fallback={<div>AccountUse loading......</div>}>
+            <h2>类似于瀑布流式加载，先加载AccountUse，然后再加载UserPanel</h2>
+            <Suspense fallback={<div style={{ fontWeight: "bold" }}>AccountUse loading......</div>}>
                 <AccountUse accountPromise={accountPromise} />
             </Suspense>
         </div>

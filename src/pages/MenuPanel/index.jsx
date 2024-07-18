@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 const MenuPanel = () => {
     return (
-        <div className="menu-panel" style={{ display: "grid", rowGap: "10px", gridTemplateColumns: "repeat(3, auto)" }}>
+        <div className="menu-panel" style={{ display: "grid", rowGap: "10px", gridTemplateColumns: "repeat(4, auto)" }}>
             <Link to="/use">1.use</Link>
             <Link to="/suspense">2.suspense</Link>
             <Link to="/update_data">3.update data</Link>
@@ -14,6 +14,7 @@ const MenuPanel = () => {
             <Link to="/ref_control_modal">10.ref control modal</Link>
             <Link to="/context_base">11.context base</Link>
             <Link to="/skin_change_count">12.context-the number of skin changes</Link>
+            <Link to="/use_deferred_value">12.useDeferredValue</Link>
         </div>
     )
 }
