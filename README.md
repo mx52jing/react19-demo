@@ -1,3 +1,3 @@
 # React + Vite
 
-React19尝鲜
+Try experiencing React version 19

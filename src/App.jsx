@@ -8,11 +8,12 @@ import DataInitAndUpdateToList from "@/pages/DataInitAndUpdateToList";
 import LoadMoreData from "@/pages/LoadMoreData";
 import SearchCases from "@/pages/SearchCases";
 import NestedSuspense from "@/pages/NestedSuspense";
-import RefBlock from "@/RefBlock";
+import RefBlock from "@/pages/RefBlock";
 import RefControlModal from "@/pages/RefControlModal";
-import ContextBase from "@/pages/ContextBase/index.jsx";
+import ContextBase from "@/pages/ContextBase";
 import NumberOfSkinChanges from "@/pages/NumberOfSkinChanges";
 import HookUseDeferredValue from "@/pages/HookUseDeferredValue";
+import HookUseTransition from "@/pages/HookUseTransition";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
               <Route path="/context_base" element={<ContextBase />} />
               <Route path="/skin_change_count" element={<NumberOfSkinChanges />} />
               <Route path="/use_deferred_value" element={<HookUseDeferredValue />} />
+              <Route path="/use_transition" element={<HookUseTransition />} />
               <Route path="*" element={<UsePage />} />
           </Routes>
       </>
